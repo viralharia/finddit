@@ -24,7 +24,7 @@ searchForm.addEventListener('submit', e => {
         reddit.search(searchTerm, searchLimit, sortBy).then(results => {
             let output = `<div class="card-columns">`;
             results.forEach( post => {
-                console.log(post);
+                //console.log(post);
                 let imageUrl = post.preview ? post.preview.images[0].source.url : `https://cdn.comparitech.com/wp-content/uploads/2017/08/reddit-1.jpg`;
 
                 output += `
